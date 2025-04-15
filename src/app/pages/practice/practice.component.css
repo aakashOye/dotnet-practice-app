@@ -1,0 +1,32 @@
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .scroll-viewport {
+    height: 90vh;
+    width: 100%;
+  }
+  
+
+  mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #1976d2;
+    color: white;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  
+  
+  

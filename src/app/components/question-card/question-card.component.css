@@ -1,0 +1,51 @@
+.question-card {
+    margin: 1rem auto;
+    max-width: 800px;
+    width: 100%; /* 👈 ensures it shrinks on small screens */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden; /* 👈 blocks horizontal scroll */
+  }
+  
+  
+  .question-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* 👇 Add these for wrapping & overflow fix */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 1.4;
+  }
+  
+  .answer-text {
+    font-size: 16px;
+    color: #444;
+     /* 👇 Add these to handle overflow */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 1.5;
+  }
+
+  .question-text,
+.answer-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 1.5;
+}
+
+
+  @media (max-width: 600px) {
+    .question-text {
+      font-size: 16px;
+    }
+  
+    .answer-text {
+      font-size: 14px;
+    }
+  }
+  
+  

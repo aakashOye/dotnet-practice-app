@@ -1,0 +1,71 @@
+<!-- <mat-card class="question-card">
+    <mat-card-header>
+      <mat-icon>quiz</mat-icon>
+      <mat-card-title>{{ question.type | titlecase }} Question</mat-card-title>
+    </mat-card-header>
+  
+    <mat-card-content>
+      <h3 class="question-text">{{ question.question }}</h3>
+  
+      <ng-container [ngSwitch]="question.type">
+        <p *ngSwitchCase="'descriptive'" class="answer-text">
+          {{ question.answer }}
+        </p>
+  
+        <div *ngSwitchCase="'mcq'">
+          <mat-selection-list>
+            <mat-list-option *ngFor="let opt of question.options">
+              {{ opt }}
+            </mat-list-option>
+          </mat-selection-list>
+        </div>
+      </ng-container>
+    </mat-card-content>
+  
+    <mat-card-actions>
+        <button mat-button color="accent" (click)="toggleBookmark()">
+          {{ isBookmarked ? '✅ Bookmarked' : '🔖 Bookmark' }}
+        </button>
+      </mat-card-actions>
+  </mat-card>
+   -->
+
+<mat-card class="question-card w-full max-w-2xl mx-auto my-4 shadow-md rounded-xl">
+  <mat-card-header class="flex items-center space-x-2">
+    <mat-icon color="primary">quiz</mat-icon>
+    <mat-card-title class="text-lg font-semibold">
+      {{ question.type | titlecase }} Question - {{question.level | titlecase}}
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content class="p-4">
+    <h3 class="question-text text-base font-medium text-gray-800 mb-2">
+      {{ question.question }}
+    </h3>
+
+    <ng-container [ngSwitch]="question.type">
+      <p *ngSwitchCase="'descriptive'" class="answer-text text-sm text-gray-600 whitespace-pre-line">
+        {{ question.answer }}
+      </p>
+
+      <div *ngSwitchCase="'mcq'" class="mt-2">
+        <div *ngSwitchCase="'mcq'" class="mt-2">
+            <mat-radio-group [(ngModel)]="selectedOption" (change)="checkAnswer()">
+              <mat-radio-button *ngFor="let opt of question.options" [value]="opt">
+                {{ opt }}
+              </mat-radio-button>
+            </mat-radio-group>
+          </div>
+          <p *ngIf="selectedOption" [ngClass]="{'text-green-500': isCorrect, 'text-red-500': !isCorrect}">
+            {{ isCorrect ? '✅ Correct Answer!' : '❌ Wrong Answer. Try Again!' }}
+          </p>
+      </div>
+    </ng-container>
+  </mat-card-content>
+
+  <mat-card-actions class="flex justify-end p-4 pt-0">
+    <button mat-stroked-button color="accent" (click)="toggleBookmark()">
+        {{ isBookmarked ? '✅ Bookmarked' : '🔖 Bookmark' }}
+    </button>
+  </mat-card-actions>
+</mat-card>

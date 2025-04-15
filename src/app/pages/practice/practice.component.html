@@ -1,0 +1,78 @@
+<!-- <mat-toolbar color="primary">
+    <span>.NET Interview Questions</span>
+    <span class="spacer"></span>
+  
+    <mat-button-toggle-group [(ngModel)]="selectedType">
+      <mat-button-toggle value="all">All</mat-button-toggle>
+      <mat-button-toggle value="mcq">MCQ</mat-button-toggle>
+      <mat-button-toggle value="descriptive">Descriptive</mat-button-toggle>
+    </mat-button-toggle-group>
+  </mat-toolbar>
+
+<cdk-virtual-scroll-viewport itemSize="220" class="scroll-viewport">
+    <app-question-card
+      *cdkVirtualFor="let q of filteredQuestions"
+      [question]="q"
+    ></app-question-card>
+  </cdk-virtual-scroll-viewport>
+   -->
+
+   <mat-toolbar color="primary" class="flex justify-between items-center px-4 py-2">
+    <span class="text-lg font-semibold">.NET Interview Questions</span>
+    <button mat-icon-button (click)="toggleFilters()" aria-label="Toggle Filters">
+      <mat-icon>{{ showFilters ? 'expand_less' : 'expand_more' }}</mat-icon>
+    </button>
+  </mat-toolbar>
+  
+  <!-- Collapsible Filter Section -->
+  <div *ngIf="showFilters" class="p-4 space-y-4 bg-blue-50 border-b border-blue-200">
+  
+    <!-- Type Toggle -->
+    <mat-button-toggle-group [(ngModel)]="selectedType" (change)="applyFilters()" class="w-full justify-center">
+      <mat-button-toggle value="all">All</mat-button-toggle>
+      <mat-button-toggle value="mcq">MCQ</mat-button-toggle>
+      <mat-button-toggle value="descriptive">Descriptive</mat-button-toggle>
+    </mat-button-toggle-group>
+  
+    <!-- Topic Filter -->
+    <mat-form-field appearance="fill" class="w-full">
+      <mat-label>Topic</mat-label>
+      <mat-select [(ngModel)]="selectedTopic" (selectionChange)="applyFilters()">
+        <mat-option value="all">All</mat-option>
+        <mat-option *ngFor="let t of allTopics" [value]="t">{{ t }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <!-- Level Filter -->
+    <mat-form-field appearance="fill" class="w-full">
+      <mat-label>Level</mat-label>
+      <mat-select [(ngModel)]="selectedLevel" (selectionChange)="applyFilters()">
+        <mat-option value="all">All</mat-option>
+        <mat-option value="beginner">Beginner</mat-option>
+        <mat-option value="intermediate">Intermediate</mat-option>
+        <mat-option value="advanced">Advanced</mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <!-- Bookmark Toggle -->
+    <button mat-raised-button color="accent" (click)="showBookmarkedQuestions()" class="w-full">
+      {{ showBookmarks ? '🔙 All Questions' : '🔖 Show Bookmarks' }}
+    </button>
+  </div>
+  
+  
+  <!-- Responsive virtual scroll container -->
+  <div class="p-4">
+    <cdk-virtual-scroll-viewport
+      itemSize="250"
+      class="scroll-viewport h-[calc(100vh-100px)] w-full"
+    >
+      <app-question-card
+        *cdkVirtualFor="let q of filteredQuestions"
+        [question]="q"
+        [isBookmarked]="isQuestionBookmarked(q)"
+        (bookmarkToggle)="toggleBookmark($event)"
+      ></app-question-card>
+    </cdk-virtual-scroll-viewport>
+  </div>
+  

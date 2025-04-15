@@ -1,0 +1,411 @@
+[
+    {
+      "type": "mcq",
+      "level": "beginner",
+      "topic": "C# Fundamentals",
+      "question": "Which of the following is a value type in C#?",
+      "options": ["string", "class", "int", "object"],
+      "correct_answer": "int",
+      "answer": "Value types directly hold their value in memory. `int` is a primitive value type in C#."
+    },
+    {
+      "type": "descriptive",
+      "level": "beginner",
+      "topic": "C# Fundamentals",
+      "question": "Explain the difference between `int` and `string` data types in C#.",
+      "answer": "`int` is a value type representing a 32-bit signed integer. `string` is a reference type representing an immutable sequence of Unicode characters."
+    },
+    {
+      "type": "mcq",
+      "level": "beginner",
+      "topic": "C# Fundamentals",
+      "question": "What is the purpose of the `using` keyword in C#?",
+      "options": ["To import a namespace", "To define a new class", "To declare a variable", "To create a loop"],
+      "correct_answer": "To import a namespace",
+      "answer": "The `using` keyword is primarily used to import namespaces, allowing you to use types within that namespace without fully qualifying their names. It's also used for resource management in `using` statements."
+    },
+    {
+      "type": "descriptive",
+      "level": "beginner",
+      "topic": "C# Fundamentals",
+      "question": "What is a namespace in C# and why is it used?",
+      "answer": "A namespace is a logical grouping of related types. It helps to organize code and prevent naming collisions between different parts of an application or different libraries."
+    },
+    {
+      "type": "mcq",
+      "level": "beginner",
+      "topic": "C# Fundamentals",
+      "question": "Which operator is used for assignment in C#?",
+      "options": ["==", "=", "+=", "==="],
+      "correct_answer": "=",
+      "answer": "The `=` operator is the assignment operator in C#."
+    },
+    {
+      "type": "descriptive",
+      "level": "beginner",
+      "topic": "C# Fundamentals",
+      "question": "What are the common arithmetic operators in C#?",
+      "answer": "Common arithmetic operators in C# include `+` (addition), `-` (subtraction), `*` (multiplication), `/` (division), and `%` (modulus)."
+    },
+    {
+      "type": "mcq",
+      "level": "beginner",
+      "topic": "C# Fundamentals",
+      "question": "Which of the following is a reference type in C#?",
+      "options": ["struct", "enum", "bool", "string"],
+      "correct_answer": "string",
+      "answer": "Reference types store a reference to the memory location where the actual data is stored. `string` is a reference type in C#."
+    },
+    {
+      "type": "descriptive",
+      "level": "beginner",
+      "topic": "C# Fundamentals",
+      "question": "Explain the difference between value types and reference types in C#.",
+      "answer": "Value types hold the actual data within their own memory allocation, while reference types hold a reference (memory address) to the actual data, which is stored elsewhere in memory (usually on the heap). Assignment of value types copies the value, while assignment of reference types copies the reference."
+    },
+    {
+      "type": "mcq",
+      "level": "beginner",
+      "topic": "C# Fundamentals",
+      "question": "What is the purpose of the `new` keyword in C#?",
+      "options": ["To declare a variable", "To create a new instance of a class", "To define a new namespace", "To write output to the console"],
+      "correct_answer": "To create a new instance of a class",
+      "answer": "The `new` keyword is used to create a new instance (object) of a class or a value type."
+    },
+    {
+      "type": "descriptive",
+      "level": "beginner",
+      "topic": "C# Fundamentals",
+      "question": "What is a constructor in C#?",
+      "answer": "A constructor is a special method of a class that is automatically called when an object of that class is created. It is used to initialize the object's state."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is method overloading in C#?",
+      "options": ["Defining a method with the same name but different return type", "Defining a method with the same name and the same parameters", "Defining multiple methods in the same class with the same name but different parameter lists", "Defining a method that calls another method"],
+      "correct_answer": "Defining multiple methods in the same class with the same name but different parameter lists",
+      "answer": "Method overloading allows you to define multiple methods in the same class with the same name but different parameter lists (number, types, or order of parameters)."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "Explain the concept of inheritance in C#.",
+      "answer": "Inheritance is a mechanism in which a new class (derived class or child class) inherits properties and methods from an existing class (base class or parent class). It promotes code reusability and establishes an \"is-a\" relationship between classes."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "Which keyword is used to implement inheritance in C#?",
+      "options": ["implements", "extends", "inherits", ":"],
+      "correct_answer": ":",
+      "answer": "The colon (`:`) is used to specify the base class when defining a derived class in C#."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the difference between a class and a struct in C#?",
+      "answer": "Classes are reference types and reside on the heap, while structs are value types and reside on the stack. Classes support inheritance, while structs do not. Structs are generally used for small, data-centric types to improve performance."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the purpose of the `virtual` keyword in C#?",
+      "options": ["To prevent a method from being overridden", "To indicate that a method must be overridden in derived classes", "To allow a method to be overridden in derived classes", "To define a static method"],
+      "correct_answer": "To allow a method to be overridden in derived classes",
+      "answer": "The `virtual` keyword is used to declare a method that can be overridden in a derived class using the `override` keyword."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "Explain the concept of polymorphism in C#.",
+      "answer": "Polymorphism means \"many forms.\" In C#, it allows objects of different classes to be treated as objects of a common base class. This enables writing more flexible and extensible code through method overriding and interfaces."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is an interface in C#?",
+      "options": ["A class that cannot be instantiated", "A blueprint of a class that contains only abstract members", "A class with only static members", "A collection of related classes"],
+      "correct_answer": "A blueprint of a class that contains only abstract members",
+      "answer": "An interface defines a contract that classes can implement. It contains only declarations of methods, properties, events, or indexers, without providing any implementation."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "How does C# support multiple inheritance?",
+      "answer": "C# does not directly support multiple inheritance of classes. However, a class can implement multiple interfaces, which provides a form of multiple inheritance of behavior."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the purpose of the `abstract` keyword in C#?",
+      "options": ["To create a class that cannot be instantiated", "To create a method that must be implemented in derived classes", "Both of the above", "None of the above"],
+      "correct_answer": "Both of the above",
+      "answer": "The `abstract` keyword can be used to declare an abstract class (which cannot be instantiated) or an abstract member (which must be implemented in derived non-abstract classes)."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "Explain the difference between an abstract class and an interface in C#.",
+      "answer": "An abstract class can have both abstract and non-abstract members (with implementation), and a class can inherit from only one abstract class. An interface can only contain abstract members (implicitly), and a class can implement multiple interfaces."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is a property in C#?",
+      "options": ["A variable declared within a class", "A method used to access private fields of a class", "A member that provides controlled access to the fields of an object", "A type of event in C#"],
+      "correct_answer": "A member that provides controlled access to the fields of an object",
+      "answer": "A property in C# is a member of a class that provides a flexible mechanism to read, write, or compute the value of a private field while allowing controlled access through get and set accessors."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What are access modifiers in C#? List the common ones.",
+      "answer": "Access modifiers control the visibility and accessibility of class members. Common access modifiers include: `public`, `private`, `protected`, `internal`, and `protected internal`."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the default access modifier for a class member in C#?",
+      "options": ["public", "private", "protected", "internal"],
+      "correct_answer": "private",
+      "answer": "The default access modifier for a class member in C# is `private`."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "Explain the difference between `public` and `private` access modifiers.",
+      "answer": "`public` members are accessible from anywhere, both within and outside the class. `private` members are only accessible within the class in which they are declared."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the purpose of the `static` keyword in C#?",
+      "options": ["To create an instance of a class", "To define a constant value", "To make a member belong to the class itself rather than to any specific object of that class", "To prevent a class from being inherited"],
+      "correct_answer": "To make a member belong to the class itself rather than to any specific object of that class",
+      "answer": "The `static` keyword is used to declare members that belong to the class itself rather than to a specific instance of the class. Static members are shared among all instances of the class."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is a static constructor in C#?",
+      "answer": "A static constructor is a special method that is called automatically only once when the class is first loaded into memory or when the first instance of the class is created. It is used to initialize static members of the class."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the difference between a constant (`const`) and a read-only (`readonly`) field in C#?",
+      "options": ["Constants can be initialized at runtime, while read-only fields must be initialized at compile time.", "Constants can be changed after initialization, while read-only fields cannot.", "Constants are implicitly static, while read-only fields can be instance or static.", "There is no difference between them."],
+      "correct_answer": "Constants are implicitly static, while read-only fields can be instance or static.",
+      "answer": "Constants (`const`) must be initialized at compile time and their value cannot be changed. They are also implicitly static. Read-only (`readonly`) fields can be initialized at compile time or in the constructor and their value cannot be changed after initialization. They can be instance or static."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "Explain the concept of encapsulation in C#.",
+      "answer": "Encapsulation is the mechanism of hiding the implementation details of an object and exposing only a controlled interface to the outside world. It is achieved through access modifiers and properties, protecting the internal state of an object from direct external manipulation."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is boxing and unboxing in C#?",
+      "options": ["Converting a value type to a reference type and vice versa", "Converting an integer to a string and vice versa", "Converting a class to an interface and vice versa", "There is no such concept in C#"],
+      "correct_answer": "Converting a value type to a reference type and vice versa",
+      "answer": "Boxing is the process of converting a value type to a reference type (object). Unboxing is the process of extracting the value type back from the boxed object."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What are nullable value types in C# and why are they used?",
+      "answer": "Nullable value types allow value types to represent the value of null. They are created using the `?` syntax (e.g., `int?`). They are useful when dealing with data from sources like databases where a value type field might have a missing or null value."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the purpose of the `as` operator in C#?",
+      "options": ["To explicitly convert one type to another", "To perform a type check and return null if the conversion fails", "To create an alias for a namespace", "To define an asynchronous method"],
+      "correct_answer": "To perform a type check and return null if the conversion fails",
+      "answer": "The `as` operator is used to perform a type conversion between compatible reference types or nullable types. If the conversion is not possible, it returns `null` instead of throwing an exception."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the purpose of the `is` operator in C#?",
+      "answer": "The `is` operator is used to check if an object is compatible with a given type or can be converted to that type."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is an event in C#?",
+      "options": ["A special type of method", "A mechanism for communication between objects", "A way to handle exceptions", "A type of loop"],
+      "correct_answer": "A mechanism for communication between objects",
+      "answer": "An event in C# is a mechanism that allows one object (publisher) to notify other objects (subscribers) that something has happened."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "Explain the concept of delegates in C#.",
+      "answer": "A delegate in C# is a type that represents references to methods with a particular parameter list and return type. It allows you to treat methods as variables and pass them as parameters to other methods."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the difference between `Action` and `Func` delegates in C#?",
+      "options": ["`Action` delegates return a value, while `Func` delegates do not.", "`Func` delegates can take parameters, while `Action` delegates cannot.", "`Action` delegates represent methods that take zero or more input parameters and do not return a value, while `Func` delegates represent methods that take zero or more input parameters and return a value.", "There is no difference between them."],
+      "correct_answer": "`Action` delegates represent methods that take zero or more input parameters and do not return a value, while `Func` delegates represent methods that take zero or more input parameters and return a value.",
+      "answer": "`Action` delegates are used for methods that perform an action and do not return a value. `Func` delegates are used for methods that perform a calculation and return a value."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is an exception in C#?",
+      "answer": "An exception is an error that occurs during the execution of a program, disrupting the normal flow of instructions."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "Which block is used to handle exceptions in C#?",
+      "options": ["try...catch", "if...else", "for...loop", "while...loop"],
+      "correct_answer": "try...catch",
+      "answer": "The `try...catch` block is used to handle exceptions in C#. Code that might throw an exception is placed within the `try` block, and the code to handle the exception is placed within the `catch` block."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the purpose of the `finally` block in a `try...catch` statement?",
+      "answer": "The `finally` block contains code that is always executed, regardless of whether an exception was thrown in the `try` block or not. It is typically used for cleanup operations like releasing resources."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the base class for all exceptions in C#?",
+      "options": ["System.Exception", "System.Object", "System.Error", "System.Throwable"],
+      "correct_answer": "System.Exception",
+      "answer": "The `System.Exception` class is the base class for all exceptions in C#."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the difference between checked and unchecked exceptions in C#?",
+      "answer": "C# primarily deals with unchecked exceptions (derived from `System.Exception`), which are not required to be explicitly caught or declared. Checked exceptions, common in languages like Java, are not a core feature of C#."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the purpose of the `throw` keyword in C#?",
+      "options": ["To declare a new exception type", "To handle an exception", "To explicitly raise an exception", "To define a custom error message"],
+      "correct_answer": "To explicitly raise an exception",
+      "answer": "The `throw` keyword is used to explicitly raise an exception in C#."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "Explain the concept of garbage collection in C#.",
+      "answer": "Garbage collection is an automatic memory management process in C# that reclaims memory occupied by objects that are no longer in use by the application. The .NET runtime's garbage collector periodically identifies and releases this unused memory, preventing memory leaks."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "Which keyword is used to ensure that unmanaged resources are properly disposed of in C#?",
+      "options": ["dispose", "release", "using", "garbageCollect"],
+      "correct_answer": "using",
+      "answer": "The `using` statement in C# provides a convenient way to ensure that objects that implement the `IDisposable` interface have their `Dispose()` method called, which is typically used to release unmanaged resources."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the `IDisposable` interface in C#?",
+      "answer": "The `IDisposable` interface is implemented by classes that hold unmanaged resources (like file handles, database connections, etc.). It defines a single method, `Dispose()`, which should be implemented to release these resources when the object is no longer needed."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the purpose of the `yield` keyword in C#?",
+      "options": ["To create an asynchronous method", "To return a single value from a method", "To produce a sequence of values one at a time", "To define a static method"],
+      "correct_answer": "To produce a sequence of values one at a time",
+      "answer": "The `yield` keyword is used to implement custom iterators for collections. It allows you to produce a sequence of values one at a time without having to create a temporary collection."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What are extension methods in C#?",
+      "answer": "Extension methods allow you to add new methods to existing types without modifying the original type. They are static methods that are called as if they were instance methods of the extended type."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the purpose of the `params` keyword in C#?",
+      "options": ["To define a parameter that is passed by reference", "To allow a method to accept a variable number of arguments of a specified type", "To define an optional parameter", "To specify a default value for a parameter"],
+      "correct_answer": "To allow a method to accept a variable number of arguments of a specified type",
+      "answer": "The `params` keyword allows you to define a method parameter that can accept a variable number of arguments of the same type. These arguments are passed as an array."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "Explain the concept of anonymous types in C#.",
+      "answer": "Anonymous types provide a way to create simple classes on the fly without explicitly defining their names and properties. They are often used with LINQ to project data into a new shape."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the null-coalescing operator (`??`) in C#?",
+      "options": ["It returns the left-hand operand if it is null; otherwise, it returns the right-hand operand.", "It returns the left-hand operand if it is not null; otherwise, it returns the right-hand operand.", "It throws an exception if the left-hand operand is null.", "It assigns the right-hand operand to the left-hand operand only if the left-hand operand is null."],
+      "correct_answer": "It returns the left-hand operand if it is not null; otherwise, it returns the right-hand operand.",
+      "answer": "The null-coalescing operator (`??`) returns the value of its left-hand operand if it's not null; otherwise, it evaluates and returns the value of its right-hand operand."
+    },
+    {
+      "type": "descriptive",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is the null-conditional operator (`?.`) in C#?",
+      "answer": "The null-conditional operator (`?.`) allows you to access members of an object only if the object is not null. If the object is null, it returns null without throwing a `NullReferenceException`."
+    },
+    {
+      "type": "mcq",
+      "level": "intermediate",
+      "topic": "C# Fundamentals",
+      "question": "What is string interpolation in C#?",
+      "options": ["A way to concatenate strings using the `+` operator", "A feature that allows you to embed expressions directly within string literals", "A method for comparing two strings", "A technique for formatting strings"],
+      "correct_answer": "A feature that allows you to embed expressions directly within string literals",
+      "answer": "String interpolation in C# allows you to embed expressions directly within string literals using the `$` symbol before the string and curly braces `{}` around the expressions."
+    }
+  ]
